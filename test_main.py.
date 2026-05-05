@@ -1,0 +1,12 @@
+import unittest
+from main import reverse_string
+
+class TestReverse(unittest.TestCase):
+    def test_reverse(self):
+        # Проверяем пример из задания: "hello" -> "olleh" 
+        self.assertEqual(reverse_string("hello"), "olleh")
+        # Проверяем другое слово
+        self.assertEqual(reverse_string("Python"), "nohtyP")
+
+if __name__ == '__main__':
+    unittest.main()
